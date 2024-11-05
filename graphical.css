@@ -1,0 +1,67 @@
+#container{
+	text-align: center; /* Center-align the content inside the container */
+	margin-top: 150px;
+}
+#red_box, #blue_box, #green_box {
+	padding: 50px;
+	margin-left: 20px;
+	justify-content: center;
+	display: inline-block; /* Add this line to make boxes display inline */
+}
+#input{
+	margin-top: 30px;
+	width: 400px;
+	display: block; /* Ensure the input field takes the full width */
+	margin-left: auto; /* Center-align the input field */
+	margin-right: auto; /* Center-align the input field */
+}
+#submit{
+	margin-top: 30px;
+	margin-left: 150px;
+	display: block; /* Ensure the input field takes the full width */
+	margin-left: auto; /* Center-align the input field */
+	margin-right: auto; /* Center-align the input field */
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+		
+}
+
+.text-container {
+
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+}
+
+.text-container h1{
+margin: 0;
+font-size: 50px;
+color: rgba(225,225,225, .01);
+background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
+background-repeat: repeat;
+-webkit-background-clip:text;
+animation: animate 20s ease-in-out infinite;
+text-align: center;
+text-transform: uppercase;
+font-weight: 900;
+}
+
+@keyframes animate {
+	0%, 100% {
+	background-position: left top;
+	}
+	25%{
+	background-position: right bottom;
+	}
+	50% {
+	background-position: left bottom;
+	}
+	75% {
+	background-position: right top;
+	}   
+}
